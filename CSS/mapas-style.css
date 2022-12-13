@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
+@font-face {
+    font-family: 'castlevania';
+    src: url(../fonts/SymphonyoftheNightfont.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*----------HEAD-------------*/
+
+header {
+    background-image: linear-gradient(to bottom, #23236e, #020225);
+    padding: 0px 0px 10px 10px;
+    margin: 0px 0px 0px 0px;
+    border: 1px solid #FEE8DA;
+}
+
+header > h1 {
+    color: #BF0413;
+    text-align: center;
+    font-family: 'Fondamento', cursive;
+    font-size: 3em;
+}
+
+header > p {
+    color: white;
+    text-align: center;
+    font-family: 'castlevania', serif;
+    font-size: 2em;
+}
+
+#menu {
+    font-family: 'castlevania', serif;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 5px 5px 5px 5px;
+}
+
+#menu:hover {
+    background-color: #911717;
+}
+
+/*----------BODY-------------*/
+
+body {
+    background-image: url("../imagens/background.jpg");
+    background-attachment: fixed;
+}
+
+main {
+    background-image: linear-gradient(to bottom, #23236e, #020225bf);
+    padding: 0px 0px 10px 10px;
+    margin: 5px 15% 5px 15%;
+    border: 1px solid #FEE8DA;
+    color: white;
+}
+
+#mainDiv1 {
+    padding: 10px 0px 0px 0px;
+}
+
+#mainDiv2 {
+    padding: 15px 0px 15px 0px;
+}
+
+main > p {
+    font-family: 'castlevania', serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+#h1tittle {
+    font-family: 'Fondamento', serif;
+    text-align: center;
+    color: #BF0413;
+    font-size: 3em;
+}
+
+hr {
+    margin: 0px 2.5% 25px 2%;
+    border-color: #FEE8DA;
+}
+
+#bigMap {
+    font-family: 'Fondamento', serif;
+    color: #e13333;
+    font-size: 0.7em;
+}
+
+#bigMap:hover {
+    background-color: #911717;
+    color: white;
+}
+
+#mapPic {
+    max-width: 100%;
+}
+/*--------------FOOTER-------------*/
+
+footer {
+    margin: 30px 40% -15px 40%;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+}
