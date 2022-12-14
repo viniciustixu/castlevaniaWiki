@@ -75,10 +75,11 @@ main {
 main > section > div > p {
     text-align: justify;
     margin: 0px;
+    text-indent: 15px;
 }
 
 .box {
-    padding: 5px 5px 5px 5px;
+    padding: 10px 20px 10px 20px;
     font-family: 'castlevania', serif;
     font-size: 1.5em;
     border: 1px solid #FEE8DA;
