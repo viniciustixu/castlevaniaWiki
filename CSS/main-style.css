@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap');
 @font-face {
     font-family: 'castlevania';
@@ -6,109 +8,139 @@
     font-style: normal;
 }
 
-/*----------HEAD-------------*/
-
-header {
-    background-image: linear-gradient(to bottom, #23236e, #020225);
-    padding: 0px 0px 10px 10px;
-    margin: 0px 0px 0px 0px;
-    border: 1px solid #FEE8DA;
-}
-
-header > h1 {
-    color: #BF0413;
-    text-align: center;
-    font-family: 'Fondamento', cursive;
-    font-size: 3em;
-}
-
-header > p {
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fonte2);
+    box-sizing: border-box;
     color: white;
-    text-align: center;
-    font-family: 'castlevania', serif;
-    font-size: 2em;
 }
 
-header > nav {
-    font-family: 'castlevania', serif;
+:root {
+    --fonte1: 'Fondamento', serif;
+    --fonte2: 'castlevania', serif;
+    --cor1: #BF0413;
+    --cor2: #FEE8DA;
+    --cor3: #23236e;
+    --cor4: #020225;
 }
-
-#menu {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5em;
-    padding: 5px 5px 5px 5px;
-}
-
-#menu:hover {
-    background-color: #911717;
-}
-
-/*----------BODY-------------*/
 
 body {
-    background-image: url("../imagens/background.jpg");
+    height: 100vh;
+    width: 96vw;
+    background-color: yellow;
+    
+}
+
+body {
+    background: url(../imagens/background.jpg) no-repeat center center;
+    background-size: cover;
     background-attachment: fixed;
 }
 
-main {
-    background-image: linear-gradient(to bottom, #23236e, #020225bf);
-    padding: 0px 0px 10px 10px;
-    margin: 5px 15% 5px 15%;
+.sub-titulo {
+    font-family: var(--fonte1);
+    color: #BF0413;
+    font-size: 1.2em;
+}
+
+/*-----HEADER-----*/
+.header-mobile {
+    height: 200px;
+    width: 90vw;
     border: 1px solid #FEE8DA;
+    margin: 10px auto;
+    background: linear-gradient(to bottom, #23236ee5, #020225ea);
+}
+
+.header-mobile h1 {
+    font-family: var(--fonte1);
+    text-align: center;
+    color: #BF0413;
+    margin: 20px auto;
+    font-size: 2.5em;
+}
+
+nav {
+    display: flex;
+    align-items: flex-end;
+    height: calc(100% - 95px);
+}
+
+nav a {
+    font-size: 1.2em;
+    text-decoration: none;
     color: white;
+    flex: 1;
+    margin: 10px 5px;
+    text-align: center;
+    padding: 5px 0;
 }
 
-#introducao {
-    font-family: 'Fondamento', cursive;
+nav > a:hover {
+    background-color: #BF0413;
+}
+
+
+
+/*-----MAIN-----*/
+main {
+    background: linear-gradient(to bottom, #23236e, #020225);
+    width: 80vw;
+    margin: 10px auto;
+    border: 1px solid #FEE8DA;
+    padding: 10px;
+}
+
+main > h1 {
+    font-family: var(--fonte1);
     text-align: center;
     color: #BF0413;
-    font-size: 2.2em;
+    margin: 10px 0;
+    font-size: 2.5em;
 }
 
-#pMain {
-    font-family: 'castlevania', serif;
-    font-size: 1.6em;
-    text-align: justify;
-    padding: 1px 10px;
+main > p {
+    font-size: 1.3em;
+    line-height: 1.5em;
+    margin-top: 10px;
 }
 
-#divP1 > p {
-    font-family: 'castlevania', serif;
-    font-size: 1.6em;
-    padding: 0px 25px 0px 5px;
-    text-align: justify;
-}
-
-span {
-    color: #BF0413;
-    font-family: 'Fondamento', cursive;
-    font-size: 1em;
-}
-
-#imgp1{
+.img-float-left {
     float: left;
-    padding: 5px;
-    margin: 0px 10px 10px 0;
-    max-width: 186px;
-}
-
-#vidYoutube {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    font-family: 'castlevania', serif;
-    font-style: italic;
+    width: 90px;
+    height: 100px;
 }
 
 iframe {
     max-width: 100%;
 }
-/*--------------FOOTER-------------*/
 
+main > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/*-----FOOTER-----*/
 footer {
-    margin: 30px 40% -15px 40%;
-    background-color: white;
-    text-align: center;
-    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    width: 200px;
+    background-color: var(--cor2);
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 20px 20px 0 0;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > p {
+    color: black;
+    padding: 10px;
+}
+
+footer img {
+    width: 20px;
+    height: 20px;
 }
