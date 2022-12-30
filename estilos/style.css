@@ -26,6 +26,7 @@ body {
     max-width: 960px;
     margin: 10px auto 0px auto;
     border: 1px solid #F2D4C2;
+    box-shadow: 2px 3px 5px 1px #00000070;
 }
 
 .header h1 {
@@ -62,6 +63,7 @@ body {
 .header li {
     flex: 1 1 150px;
     margin: 10px;
+    list-style: none;
 }
 
 /*MAIN*/
@@ -73,6 +75,7 @@ body {
     border: 1px solid #F2D4C2;
     padding: 30px;
     color: white;
+    box-shadow: 2px 5px 5px 1px #00000070;
 }
 
 #alucard-img {
@@ -85,6 +88,10 @@ body {
     line-height: 1.5em;
     font-size: 1.4em;
     padding-bottom: 10px;
+}
+
+.main > div > p:nth-child(2) {
+    padding-top: 15px;
 }
 
 .titulo-p {
