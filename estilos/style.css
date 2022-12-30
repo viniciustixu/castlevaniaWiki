@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&display=swap'); font-family /*'Fondamento', cursive;*/
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fondamento', cursive, sans-serif;
+    background: url(../imagens/background.jpg) no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*header*/
+
+.header {
+    background: linear-gradient(to bottom, #222269, #000021);
+    max-width: 960px;
+    margin: 10px auto 0px auto;
+    border: 1px solid #F2D4C2;
+}
+
+.header h1 {
+    color: #f10000;
+    font-size: 3em;
+    text-align: center;
+    display: block;
+}
+
+.header nav {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    margin: 20px;
+}
+
+.header a:hover {
+    background: #f10000;
+}
+
+.header ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+.header li {
+    flex: 1 1 150px;
+    margin: 10px;
+}
+
+/*MAIN*/
+
+.main {
+    background: linear-gradient(to bottom, hsla(240, 56%, 52%, 0.884), #000021b6);
+    max-width: 800px;
+    margin: 10px auto;
+    border: 1px solid #F2D4C2;
+    padding: 30px;
+    color: white;
+}
+
+#alucard-img {
+    max-width: 100px;
+    float: left;
+    padding: 10px;
+}
+
+.main > div > p {
+    line-height: 1.5em;
+    font-size: 1.4em;
+    padding-bottom: 10px;
+}
+
+.titulo-p {
+    font-size: 1.5em;
+    color: #c90000;
+}
+
+iframe {
+    max-width: 100%;
+    margin: 20px auto;
+    display: block;
+}
+
+#video-yt {
+    font-style: italic;
+    text-align: center;
+    font-size: .8em;
+}
+ 
+/*footer*/
+
+.footer {
+    background: #F2D4C2;
+    max-width: 200px;
+    margin: 20px auto -17px auto;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
