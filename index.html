@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <title>CastlevâniaWIKI</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header class="header">
         <h1>Castlevânia WIKI</h1>
-        <nav>
+        <nav class="menu-grande" id="iMenuGrande">
             <ul>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Equipamentos</a></li>
@@ -18,6 +19,19 @@
                 <li><a href="#">Musicas</a></li>
             </ul>
         </nav>
+
+        <div class="menu-hamburguer" onclick="chamarMenu()">
+            <span class="material-icons"> menu </span>
+        </div>
+        
+        <section class="menu-pequeno" id="iMenuPequeno">
+            <ul>
+                <li><a href="#">pequeno</a></li>
+                <li><a href="#">pequeno</a></li>
+                <li><a href="#">pequeno</a></li>
+                <li><a href="#">pequeno</a></li>
+            </ul>
+        </section>
     </header>
 
     <main class="main">
@@ -43,4 +57,23 @@
         <p>Created by &#169 Tixu</p>
     </footer>
 </body>
+<script>
+        function mudouTamanho() {
+            if (window.innerWidth > 780) {
+                iMenuGrande.style.display = 'block'
+                iMenuPequeno.style.display = 'none'
+            } else {
+                iMenuGrande.style.display = 'none'
+            }
+        }
+
+        function chamarMenu() {
+            if (iMenuPequeno.style.display == 'block') {
+                iMenuPequeno.style.display = 'none'
+            } else {
+                iMenuPequeno.style.display = 'block'
+            }
+        }
+    
+</script>
 </html>

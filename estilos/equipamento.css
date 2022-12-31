@@ -87,3 +87,28 @@ body {
     border-radius: 10px 10px 0 0;
     text-align: center;
 }
+
+@media screen and (max-width: 780px) {
+    .menu-pequeno {
+        display: none;
+        align-items: stretch;
+    }
+    
+    .menu-pequeno ul {
+        align-items: center;
+        flex-direction: column;
+        padding-inline-start: 0px;
+    }
+
+    .menu-pequeno > ul > li {
+        flex: 1 1 40px;
+    }
+    
+    .menu-grande {
+        display: none;
+    }
+
+    .menu-hamburguer {
+        display: block;
+    }
+}

@@ -35,8 +35,8 @@ body {
     text-align: center;
     display: block;
 }
-
-.header nav {
+ /*menugrande*/
+.menu-grande {
     margin: 0 auto;
     max-width: 100%;
 }
@@ -64,6 +64,28 @@ body {
     flex: 1 1 150px;
     margin: 10px;
     list-style: none;
+}
+
+.menu-pequeno {
+    display: none;
+}
+
+.menu-hamburguer {
+    display: none;
+}
+
+.menu-hamburguer {
+    color: white;
+    text-align: center;
+    width: 150px;
+    border: 1px solid #F2D4C2;
+    margin: 10px auto;
+    padding-top: 5px;
+}
+
+.menu-hamburguer:hover {
+    background-color: #c90000;
+    cursor: pointer;
 }
 
 /*MAIN*/
@@ -119,4 +141,29 @@ iframe {
     margin: 20px auto -17px auto;
     border-radius: 10px 10px 0 0;
     text-align: center;
+}
+
+@media screen and (max-width: 780px) {
+    .menu-pequeno {
+        display: none;
+        align-items: stretch;
+    }
+    
+    .menu-pequeno ul {
+        align-items: center;
+        flex-direction: column;
+        padding-inline-start: 0px;
+    }
+
+    .menu-pequeno > ul > li {
+        flex: 1 1 40px;
+    }
+    
+    .menu-grande {
+        display: none;
+    }
+
+    .menu-hamburguer {
+        display: block;
+    }
 }
