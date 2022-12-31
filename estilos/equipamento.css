@@ -35,8 +35,8 @@ body {
     text-align: center;
     display: block;
 }
-
-.header nav {
+ /*menugrande*/
+.menu-grande {
     margin: 0 auto;
     max-width: 100%;
 }
@@ -66,6 +66,28 @@ body {
     list-style: none;
 }
 
+.menu-pequeno {
+    display: none;
+}
+
+.menu-hamburguer {
+    display: none;
+}
+
+.menu-hamburguer {
+    color: white;
+    text-align: center;
+    width: 150px;
+    border: 1px solid #F2D4C2;
+    margin: 10px auto;
+    padding-top: 5px;
+}
+
+.menu-hamburguer:hover {
+    background-color: #c90000;
+    cursor: pointer;
+}
+
 /*MAIN*/
 
 .main {
@@ -76,6 +98,11 @@ body {
     padding: 30px;
     color: white;
     box-shadow: 2px 5px 5px 1px #00000070;
+}
+
+.titulo-p {
+    font-size: 1.5em;
+    color: #c90000;
 }
  
 /*footer*/
