@@ -104,6 +104,34 @@ body {
     font-size: 1.5em;
     color: #c90000;
 }
+
+.titulo-p:hover {
+    background-color: #c90000;
+    color: white;
+    cursor: pointer;
+}
+
+.main p {
+    text-align: center;
+}
+
+.main > p > a {
+    text-decoration: none;
+}
+
+.main h1 {
+    text-align: center;
+    color: #c90000;
+    border-top: 2px solid #F2D4C2;
+    border-bottom: 2px solid #F2D4C2;
+}
+
+.mapa img {
+    max-width: 100%;
+    display: block;
+    padding: 20px 0;
+    
+}
  
 /*footer*/
 
