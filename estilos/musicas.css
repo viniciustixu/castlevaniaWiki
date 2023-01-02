@@ -134,6 +134,30 @@ body {
     max-width: 100%;
 }
 
+.seletor-de-paginas {
+    display: flex;
+    border-top: 1px solid #F2D4C2;
+    border-bottom: 1px solid #F2D4C2;
+    height: 40px;
+    width: 100%;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.seletor-de-paginas a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    padding: 0 20px;
+    font-family: monospace;
+}
+
+.seletor-de-paginas a:hover {
+    background-color: #f10000;
+}
+
 /*footer*/
 
 .footer {

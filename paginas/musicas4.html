@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/faviconBat.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/musicas.css">
+    <title>CastlevâniaWIKI</title>
+</head>
+<body onresize="mudouTamanho()">
+    <header class="header">
+        <h1>Castlevânia WIKI</h1>
+        <nav class="menu-grande" id="iMenuGrande">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../paginas/equipamentos.html">Equipamentos</a></li>
+                <li><a href="../paginas/mapas.html">Mapa</a></li>
+                <li><a href="#">Musicas</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-hamburguer" onclick="chamarMenu()">
+            <span class="material-icons"> menu </span>
+        </div>
+        
+        <section class="menu-pequeno" id="iMenuPequeno">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../paginas/equipamentos.html">Equipamentos</a></li>
+                <li><a href="../paginas/mapas.html">Mapa</a></li>
+                <li><a href="#">Musicas</a></li>
+            </ul>
+        </section>
+    </header>
+
+    <main class="main">
+        <div class="musica-container">
+
+            <div class="musica">
+                <h2> Gates of Heaven </h2>
+                <img src="../imagens/sotn.png" alt="imagem  Gates of Heaven ">
+                <audio src="../musicas/Gates of Heaven.mp3 " controls></audio>
+            </div>
+
+            <div class="musica">
+                <h2> I am the Wind </h2>
+                <img src="../imagens/sotn.png" alt="imagem  I am the Wind ">
+                <audio src="../musicas/I am the Wind (Vocals by Cynthia Harrell).mp3 " controls></audio>
+            </div>
+
+            <div class="musica">
+                <h2> Land of Benediction </h2>
+                <img src="../imagens/sotn.png" alt="imagem  Land of Benediction ">
+                <audio src="../musicas/Land of Benediction (Game Over).mp3 " controls></audio>
+            </div>
+
+            <div class="musica">
+                <h2> Nocturne </h2>
+                <img src="../imagens/sotn.png" alt="imagem  Nocturne ">
+                <audio src="../musicas/Nocturne.mp3 " controls></audio>
+            </div>
+
+            <div class="musica">
+                <h2> Prayer </h2>
+                <img src="../imagens/sotn.png" alt="imagem  Prayer ">
+                <audio src="../musicas/Prayer.mp3 " controls></audio>
+            </div>
+
+            <div class="musica">
+                <h2> Rainbow's Cemetery </h2>
+                <img src="../imagens/sotn.png" alt="imagem  Rainbow's Cemetery ">
+                <audio src="../musicas/Rainbow's Cemetery.mp3 " controls></audio>
+            </div>
+
+            <section class="seletor-de-paginas">
+                <a href="musicas.html">1</a>
+                <a href="musicas2.html">2</a>
+                <a href="musicas3.html">3</a>
+                <a href="#">4</a>
+                <a href="musicas5.html">5</a>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Created by &#169 Tixu</p>
+    </footer>
+</body>
+<script>
+        function mudouTamanho() {
+            if (window.innerWidth > 780) {
+                iMenuGrande.style.display = 'block'
+                iMenuPequeno.style.display = 'none'
+            } else {
+                iMenuGrande.style.display = 'none'
+            }
+        }
+
+        function chamarMenu() {
+            if (iMenuPequeno.style.display == 'block') {
+                iMenuPequeno.style.display = 'none'
+            } else {
+                iMenuPequeno.style.display = 'block'
+            }
+        }
+    
+</script>
+</html>
