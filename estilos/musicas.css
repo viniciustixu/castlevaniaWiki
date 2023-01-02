@@ -124,7 +124,7 @@ body {
 }
 
 .musica img {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16 / 10;
     object-fit: cover;
     padding: 5px;
     border-radius: 0 15px;
