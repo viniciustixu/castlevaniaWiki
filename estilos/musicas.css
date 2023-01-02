@@ -192,3 +192,9 @@ body {
         display: block;
     }
 }
+
+@media screen and (max-width: 518px) {
+    .musica {
+        max-width: 70%;
+    }
+}
