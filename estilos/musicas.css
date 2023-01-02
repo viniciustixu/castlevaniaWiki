@@ -124,8 +124,10 @@ body {
 }
 
 .musica img {
-    max-width: 100%;
-    padding-bottom: 5px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    padding: 5px;
+    border-radius: 0 15px;
 }
 
 .musica audio {
